@@ -83,7 +83,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'some_bd_name',
         'USER': 'postgres',
-        'HOST': 'localhost',
+        'HOST': 'postgres_db',
+        'PASSWORD': 12345,
     }
 }
 
@@ -143,6 +144,6 @@ INTERNAL_IPS = [
 CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.redis.RedisCache',
-        'LOCATION': 'redis://localhost:6379',
+        'LOCATION': 'redis://redis_cache:6379',
     }
 }
